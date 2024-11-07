@@ -11,5 +11,15 @@
         }
         return obj;
     };
-    console.log(updateProfile({ name: "Apubo", age: 24, email: "apurbopaul131@gmail.com" }, { name: "Antu", age: 25 }));
+    const Apubo = {
+        name: "Apubo",
+        age: 24,
+        email: "apurbopaul131@gmail.com",
+    };
+    const updateApurbo = {
+        name: "Antu",
+        age: 25,
+        address: "hello",
+    };
+    console.log(updateProfile(Apubo, updateApurbo));
 }
