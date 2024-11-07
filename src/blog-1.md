@@ -126,3 +126,30 @@ const ApurboFullStack: FullstackDeveloper = {
 - **Provide Safety for complex structrue:** Intersection types ensure the new type or interface contains all properties of each component type or interface that lead to easy implementation of complex structure.
 
 **More example:**
+
+```javascript
+//define two interfaces
+type FrontendDeveloper = {
+  name: string,
+  age: number,
+  computerModel: string,
+  forntendSkills: string[],
+};
+interface BackendDeveloper {
+  name: string;
+  age: number;
+  computerModel: string;
+  backendSkills: string[];
+}
+//create new type by combine type and interface
+type FullstackDeveloper = FrontendDeveloper & BackendDeveloper;
+
+//create varibale using FullstackDeveloper type
+const ApurboFullStack: FullstackDeveloper = {
+  name: "Apubo",
+  age: 24,
+  computerModel: "Hp",
+  forntendSkills: ["Html", "Css", "Js", "React"],
+  backendSkills: ["node", "express", "mongoDb"],
+};
+```
