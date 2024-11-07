@@ -115,3 +115,14 @@ const ApurboFullStack: FullstackDeveloper = {
   backendSkills: ["node", "express", "mongoDb"],
 };
 ```
+
+**Significane of intersection types:**
+
+- **Create complex type:** Intersection types are batter for create complex object that
+  extends properties from multiple types or interfaces.
+
+- **Code resuability:** To ensure reusability of small types or interface by reduce duplicate code.
+
+- **Provide Safety for complex structrue:** Intersection types ensure the new type or interface contains all properties of each component type or interface that lead to easy implementation of complex structure.
+
+**More example:**
