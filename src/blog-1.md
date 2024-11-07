@@ -13,3 +13,20 @@ that does not exixt in constituent property then you get a compile-time error. Y
 The type nrarrowing concept are inplemented by typof operator,in or any custom logic.
 Type narrowing is most important when you used union types.Because, if you want to use
 any methods on variable that does not exist in all union types you can get a error.
+
+**Example:**
+
+```javascript
+// ES5 syntax
+var multiply = function (x, y) {
+  return x * y;
+};
+
+// ES6 arrow function
+var multiply = (x, y) => {
+  return x * y;
+};
+
+// Or even simpler
+var multiply = (x, y) => x * y;
+```
