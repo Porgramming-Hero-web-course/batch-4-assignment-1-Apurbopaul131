@@ -24,7 +24,7 @@ any methods on variable that does not exist in all union types you can get a err
         email:string;
     }
     //Create a union type that hods several types of constituent Person type.
-    type PersonProperty = keyof Person;
+    type PersonProperty = keyof Person; // "name" | "age" | "email"
 
     //create a variable using Peson type
     const Apurbo:Person = {
@@ -40,3 +40,11 @@ any methods on variable that does not exist in all union types you can get a err
     //if you want to use any property thet does not exist in constituent types Person you get an compile-time error.
     const ApurboAddress:PersonProperty = "address";
 ```
+
+**Significane of Union types:**
+
+- **Flexibility:** Union types provide fexibility by allowing varialb to holds multuple types.Union types are most helpful for function that handle mulpile types as parameters.
+
+- **Simplifies error handling:** Union types define types explicitly that ensure easy error handling.
+
+- **Enhance code readability:** Union type defince possible values clearly that helpful for developers to understand the code.
