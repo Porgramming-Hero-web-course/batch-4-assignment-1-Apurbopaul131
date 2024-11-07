@@ -4,7 +4,7 @@
 **Author:** Apubo paul
 
 **Introduction** Union and intersection types are crutial features in typesctipt that
-help to ensure code safety,felxibility and control in your project.
+help to ensure code safety,flexibility and control in your project.
 
 **Union Types:** Union types allows a variable to be one of several possible types.
 Union types are denoted by "|" symbol.A variable with a uniion types just use these
@@ -12,7 +12,7 @@ methods and properties that are exist in constituent types.If you can access pro
 that does not exixt in constituent property then you get a compile-time error. You can use type narrowing concept to determine which union types currently hold by varriable.
 The type nrarrowing concept are inplemented by typof operator,in or any custom logic.
 Type narrowing is most important when you used union types.Because, if you want to use
-any methods on variable that does not exist in all union types you can get a error.
+any methods on variable that does not exist in all union types you can get a compiler-error.
 
 **Example:**
 
@@ -43,11 +43,11 @@ any methods on variable that does not exist in all union types you can get a err
 
 **Significane of Union types:**
 
-- **Flexibility:** Union types provide fexibility by allowing varialb to holds multuple types.Union types are most helpful for function that handle mulpile types as parameters.
+- **Flexibility:** Union types provide flextbility by allowing varialbe to holds multuple types.Union types are most helpful for function that handle mulpile types as parameters.
 
 - **Simplifies error handling:** Union types define types explicitly that ensure easy error handling.
 
-- **Enhance code readability:** Union type defince possible values clearly that helpful for developers to understand the code.
+- **Enhance code readability:** Union type define possible values clearly that helpful for developers to understand the code.
 
 **Example with function:**
 
@@ -85,7 +85,7 @@ any methods on variable that does not exist in all union types you can get a err
   console.log(resultTwo); // Apurbo131
 ```
 
-**Insertion Type:** Insertion types are combine multiple types into single one,where the new types contains all properties of each component type.It denoted by "&".This types usally used when we need to create an object that extend multiple types or interfaces.In insertion type, You can combine interface and type to create a new complex type or interface.
+**Insertion Type:** Insertion types are combine multiple types into single one,where the new types contains all properties of each component type.It denoted by "&" symbol.This types usally used when we need to create an object that extends multiple types or interfaces.In insertion type, You can combine interface and type alias to create a new complex type or interface.
 
 **Example**
 
