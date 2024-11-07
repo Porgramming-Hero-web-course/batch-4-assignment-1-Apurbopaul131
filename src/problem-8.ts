@@ -15,6 +15,7 @@
     }
     return isAppear;
   };
+
   const person: {
     name: string;
     age: number;
@@ -24,5 +25,5 @@
     age: 25,
     email: "alice@example.com",
   };
-  console.log(validateKeys(person, ["age", "age"]));
+  console.log(validateKeys(person, ["name", "age"])); //Output:true
 }

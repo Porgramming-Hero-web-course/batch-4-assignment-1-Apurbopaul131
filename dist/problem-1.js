@@ -7,10 +7,8 @@
         return totalVaule;
     };
     //Takes two array to check the function
-    const numbers1 = [50, 70, 90, 100, 200];
-    const numbers2 = [700, 200, 500, 400];
+    const numbers1 = [1, 2, 3, 4, 5];
     //call the function and display output
-    console.log(sumArray(numbers1));
-    console.log(sumArray(numbers2));
+    console.log(sumArray(numbers1)); //Output: 15
     //
 }

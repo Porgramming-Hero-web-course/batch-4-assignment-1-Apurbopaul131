@@ -17,7 +17,7 @@
         height: 4,
         width: 6,
     };
-    console.log(calculateShapeArea(circleInput));
-    console.log(calculateShapeArea(rectangleInput));
+    console.log(calculateShapeArea(circleInput)); //Output:
+    console.log(calculateShapeArea(rectangleInput)); //Output:
     //
 }

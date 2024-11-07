@@ -20,4 +20,5 @@
     email: "alice@example.com",
   };
   console.log(updateProfile(myProfile, { name: "Apurbo Paul", age: 26 }));
+  // Output:{ name: 'Apurbo Paul', age: 26, email: 'alice@example.com' }
 }

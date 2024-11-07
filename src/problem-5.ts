@@ -23,7 +23,7 @@
     person,
     personProperty1
   ) as string;
-  console.log(result1);
+  console.log(result1); //Output:Alice
 
   //
 }

@@ -11,6 +11,8 @@
         return wordCount;
     };
     const reult1 = countWordOccurrences("I love typescript", "typescript");
-    console.log(reult1);
+    const result2 = countWordOccurrences("Successful", "success");
+    console.log(reult1); //Output:1
+    console.log(result2); //Output:1
     //
 }

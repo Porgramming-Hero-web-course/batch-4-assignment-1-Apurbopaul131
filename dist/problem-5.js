@@ -9,6 +9,6 @@
     //create object property to check function
     const personProperty1 = "name";
     const result1 = getProperty(person, personProperty1);
-    console.log(result1);
+    console.log(result1); //Output:Alice
     //
 }
