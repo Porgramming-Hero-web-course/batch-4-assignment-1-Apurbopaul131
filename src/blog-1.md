@@ -84,3 +84,34 @@ any methods on variable that does not exist in all union types you can get a err
   console.log(resultOne); // 80
   console.log(resultTwo); // Apurbo131
 ```
+
+**Insertion Type:** Insertion types are combine multiple types into single one,where the new types contains all properties of each component type.It denoted by "&".This types usally used when we need to create an object that extend multiple types or interfaces.In insertion type, You can combine interface and type to create a new complex type or interface.
+
+**Example**
+
+```javascript
+//define two interfaces
+interface FrontendDeveloper {
+  name: string;
+  age: number;
+  computerModel: string;
+  forntendSkills: string[];
+}
+interface BackendDeveloper {
+  name: string;
+  age: number;
+  computerModel: string;
+  backendSkills: string[];
+}
+//create new type by using FrontendDeveloper and BackendDeveloper interfaces
+type FullstackDeveloper = FrontendDeveloper & BackendDeveloper;
+
+//create varibale using FullstackDeveloper type
+const ApurboFullStack: FullstackDeveloper = {
+  name: "Apubo",
+  age: 24,
+  computerModel: "Hp",
+  forntendSkills: ["Html", "Css", "Js", "React"],
+  backendSkills: ["node", "express", "mongoDb"],
+};
+```
