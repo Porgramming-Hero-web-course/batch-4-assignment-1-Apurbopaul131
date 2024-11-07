@@ -17,16 +17,26 @@ any methods on variable that does not exist in all union types you can get a err
 **Example:**
 
 ```javascript
-// ES5 syntax
-var multiply = function (x, y) {
-  return x * y;
-};
+//Define an type person
+    type Person = {
+        name:string,
+        age:number,
+        email:string;
+    }
+    //Create a union type that hods several types of constituent Person type.
+    type PersonProperty = keyof Person;
 
-// ES6 arrow function
-var multiply = (x, y) => {
-  return x * y;
-};
+    //create a variable using Peson type
+    const Apurbo:Person = {
+        name:"Apurbo Paul",
+        age:24,
+        email:"apurbopaul131@gmail.com"
+    }
 
-// Or even simpler
-var multiply = (x, y) => x * y;
+
+    //Create a varibale using a uninion types Person property that just use "name" | "age" | "email"
+    const ApurboName:PersonProperty = "name";
+
+    //if you want to use any property thet does not exist in constituent types Person you get an compile-time error.
+    const ApurboAddress:PersonProperty = "address";
 ```
